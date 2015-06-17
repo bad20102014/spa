@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html><head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav ul{
+            list-style: none;
+            overflow: hidden;
+        }
+        nav ul li{
+            float: left;
+            text-align: center;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            margin-left: 10px;
+            background-image: -webit-linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480), linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480);
+            background-image: -moz-linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480), linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480);
+            background-image: -ms-linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480), linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480);
+            background-image: -o-linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480), linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480);
+            background-image: linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480), linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480);
+            background-size: 5px 5px;
+            background-color: #51938f;
+        }
+    </style>
+</head>
+<body onhashchange="spa.changeurl()">
+<header>
+    <nav>
+        <ul>
+            <li><a href="#index">主页</a></li>
+            <li><a href="#csharp">C#</a></li>
+            <li><a href="#javascript">Javascript</a></li>
+            <li><a href="#html_page">Html</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="geview"></div>
+<footer>
+    <p>Design By Bad</p>
+</footer>
+<script src="js/spa.js"></script>
+<script>
+    spa.url.index="index.html";
+    spa.url.csharp="tpls/csharp.html";
+    spa.url.javascript="tpls/javascript.html";
+    spa.url.html_page="html_page.html";
+</script>
+
+</body></html>
